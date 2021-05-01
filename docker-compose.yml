@@ -7,7 +7,7 @@ services:
                        DJANGO_SUPERUSER_PASSWORD=rodrigo &&
                        DJANGO_SUPERUSER_USERNAME=rodrigo &&
                        DJANGO_SUPERUSER_EMAIL=rlocoselli@yahoo.com.br &&
-                       python manage.py createsuperuser --no-input --username=rodrigo &&
+                       python manage.py createsuperuser --no-input --username=rodrigo --email rlocoselli@yahoo.com.br --password rodrigo &&
                        python manage.py runserver 0:8000"
        ports:
            - 8000:8000
