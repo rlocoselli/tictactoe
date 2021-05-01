@@ -5,8 +5,7 @@ services:
        command: sh -c "python manage.py makemigrations &&
                        python manage.py migrate &&
                        DJANGO_SUPERUSER_PASSWORD=rodrigo &&
-                       DJANGO_SUPERUSER_USERNAME=rodrigo &&
-                       DJANGO_SUPERUSER_EMAIL=rlocoselli@yahoo.com.br &&
+                       export DJANGO_SUPERUSER_PASSWORD &&
                        python manage.py createsuperuser --no-input --username=rodrigo --email rlocoselli@yahoo.com.br &&
                        python manage.py runserver 0:8000"
        ports:
