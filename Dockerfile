@@ -1,5 +1,6 @@
 FROM python:3
-ENV PYTHONUNBUFFERED 1
+RUN mkdir /tictactoe
 WORKDIR /tictactoe
-ADD ./tictactoe
+COPY requirements.txt /tictactoe/
 RUN pip install -r requirements.txt
+COPY ./tictactoe /tictactoe/
