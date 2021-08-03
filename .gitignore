@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 tictactoeenv/
+myenv/
 Django/
 build/
 develop-eggs/
