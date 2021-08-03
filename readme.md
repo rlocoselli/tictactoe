@@ -1,4 +1,4 @@
-#Installation TicTacToe
+# Installation TicTacToe
 
 1 - Create a virtual environment
 python3 -m venv ./myenv
